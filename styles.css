@@ -1269,6 +1269,45 @@ img { display: block; max-width: 100%; }
 .peek__cta { text-align: center; }
 
 /* ============================================================
+   LANG SWITCHER
+============================================================ */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.age-gate__lang {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-muted);
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--t);
+}
+.lang-btn:hover {
+    color: var(--rose-light);
+    border-color: rgba(212, 48, 122, 0.35);
+}
+.lang-btn.active {
+    color: var(--rose-light);
+    border-color: rgba(212, 48, 122, 0.55);
+    background: rgba(212, 48, 122, 0.1);
+}
+
+/* ============================================================
    RESPONSIVE
 ============================================================ */
 @media (max-width: 900px) {
